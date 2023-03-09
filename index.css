@@ -1,0 +1,22 @@
+
+  * {
+    border: none;
+  }
+  #wave-iframe {
+    position: fixed;
+    z-index: -1; /* Set a negative z-index to make it appear behind other elements */
+    top: 0;
+    left: 0;
+    width: 100vw; /* Use viewport units to set the width to the full width of the viewport */
+    height: 100vh; /* Use viewport units to set the height to the full height of the viewport */
+    object-fit: cover; /* Maintain the aspect ratio while covering the whole viewport */
+  }
+  #cube-iframe {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    width: 30%;
+    height: 30%;
+    max-width: 300px;
+    max-height: 300px;
+  }
