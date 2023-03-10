@@ -263,7 +263,14 @@
     .card {
       width: 100%;
     }
-  
+    .mp3-container {
+      flex-direction: column;
+      align-items: center;
+    }
+    
+    .mp3-container audio {
+      width: 100%;
+    }
     .video-container {
       width: 100%;
       margin-top: 24px;
