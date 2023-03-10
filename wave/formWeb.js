@@ -37,7 +37,6 @@ var progress  = 0;
 var requestId = null;
 var reversed  = true;
 
-cloneCards(25);
 update();
 window.addEventListener("scroll", requestUpdate);
 
@@ -63,14 +62,4 @@ function update() {
   shadowAnimation.reversed(reversed);
   
   requestId = null;
-}
-
-function cloneCards(count) {
-  
-  var main = document.querySelector("main");
-  var card = document.querySelector(".card");
-
-  for (var i = 0; i < count; i++) {
-    //main.appendChild(card.cloneNode(true));
-  }  
 }
