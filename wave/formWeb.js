@@ -63,3 +63,11 @@ function update() {
   
   requestId = null;
 }
+const scrollBtn = document.getElementById("scrollBtn");
+
+scrollBtn.addEventListener("click", function() {
+  window.scrollTo({
+    top: document.body.scrollHeight,
+    behavior: 'smooth'
+  });
+});

@@ -32,7 +32,19 @@
     height: 300px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0);
   }
-  
+  #scrollBtn {
+    background-color: #d69a0e;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.5);
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    font-size: 24px;
+    font-family: "Arial", sans-serif;
+}
   .header-content {
     position: relative;
     height: 100%;
@@ -95,8 +107,9 @@
   }
   
   .icon-button {
-    display: inline-block;
-    position: relative;
+    position: fixed;
+    top: 0;
+    left: 0;
     padding: 6px;
     outline: none;
     -webkit-user-select: none;
@@ -105,9 +118,14 @@
             user-select: none;
     font-size: 0;
     line-height: 1;
-    width: 40px;
-    height: 40px;
+    width: 35px;
+    height: 60px;
     box-sizing: border-box !important;
+  }
+  
+  .material-icons {
+    font-size: 24px;
+    color: white;
   }
   .icon-button .icon {
     display: inline-flex;
