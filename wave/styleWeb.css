@@ -200,18 +200,17 @@
   }
   
   .mp3-container h2 {
-    font-size: 20px;
+    font-size: 30px;
     margin: 0;
     color: #333;
   }
   
   .mp3-container audio {
     margin-left: 300px;
-    width: 80%;
-    height: 10%;
-    max-width: 400px;
-    max-height: 100px;
-    background-position: center bottom;
+    width: 100%;
+    height: 100%;
+    max-width: 600px;
+    max-height: 300px;
   }
 
   
