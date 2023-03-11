@@ -300,25 +300,3 @@
     line-height: 1.6em;
     padding: 0 16px;
   }
-
-  
-  @media (max-width: 768px) {
-    .card {
-      width: 100%;
-    }
-    .mp3-container {
-      flex-direction: column;
-      align-items: center;
-    }
-    
-    @media (max-width: 767px) {
-      .mp3-container audio {
-        max-height: 150px;
-        width: 100%;
-      }
-    }
-    .video-container {
-      width: 100%;
-      margin-top: 24px;
-    }
-  }
