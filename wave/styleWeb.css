@@ -109,7 +109,7 @@
   #links {
     position: fixed;
     top: 15px;
-    left: 50%;
+    left: 30%;
     background-color: #d69a0e;
     padding: 10px;
     border-radius: 5px;
@@ -200,13 +200,16 @@
   }
   
   .mp3-container h2 {
-    font-size: 24px;
+    font-size: 20px;
     margin: 0;
     color: #333;
   }
   
   .mp3-container audio {
     width: 60%;
+    height: 100%;
+    max-width: 400px;
+    max-height: 100px;
     background-position: center bottom;
   }
 
@@ -308,8 +311,11 @@
       align-items: center;
     }
     
-    .mp3-container audio {
-      width: 100%;
+    @media (max-width: 767px) {
+      .mp3-container audio {
+        max-height: 150px;
+        width: 100%;
+      }
     }
     .video-container {
       width: 100%;
