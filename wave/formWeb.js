@@ -66,8 +66,53 @@ function update() {
 const scrollBtn = document.getElementById("scrollBtn");
 
 scrollBtn.addEventListener("click", function() {
-  window.scrollTo({
-    top: document.body.scrollHeight,
-    behavior: 'smooth'
-  });
+  const start = window.pageYOffset;
+  const end = document.body.scrollHeight;
+  const duration = 5000; // duration in milliseconds
+  let startTime = null;
+
+  function animateScroll(timestamp) {
+    if (!startTime) startTime = timestamp;
+    const elapsed = timestamp - startTime;
+    const progress = Math.min(elapsed / duration, 1);
+    const scrollTop = start + (end - start) * progress;
+    window.scrollTo(0, scrollTop);
+    if (progress < 1) {
+      requestAnimationFrame(animateScroll);
+    }
+  }
+
+  requestAnimationFrame(animateScroll);
+});
+
+function showLinks() {
+  var linksDiv = document.getElementById("links");
+  if (linksDiv.style.display === "none") {
+    linksDiv.style.display = "block";
+  } else {
+    linksDiv.style.display = "none";
+  }
+}
+function getRandomColor() {
+  var letters = "0123456789ABCDEF";
+  var color = "#";
+  for (var i = 0; i < 6; i++) {
+    color += letters[Math.floor(Math.random() * 16)];
+  }
+  return color;
+}
+
+var button = document.getElementById("myButton");
+
+window.addEventListener("scroll", function() {
+  var scrolled = window.scrollY;
+  var color = getRandomColor();
+  var colorOffset = 10; // change color every 10 pixels
+
+  if (scrolled > 0) {
+    var colorIndex = Math.floor(scrolled / colorOffset);
+    button.style.color = colorIndex % 2 == 0 ? color : getRandomColor(); // alternate between the same color and a random color
+  } else {
+    button.style.color = color;
+  }
 });

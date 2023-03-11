@@ -26,7 +26,7 @@
       </div>
 
       <div id="large-toolbar" class="app-toolbar tall">
-        <div id="large-title" class="large-title">All Stars At Meeker</div>
+        <div id="large-title" class="large-title">☆ All Stars At Meeker</div>
       </div>
     </div>
     <div class="mp3-container">
@@ -36,11 +36,16 @@
       </audio>
     </div>
   </header>
-
-  <div class="icon-button">
+  <div class="icon-button" id="myButton" onclick="showLinks()">
     <div class="icon">
-      <i class="material-icons">star</i>            
+      <i class="material-icons">menu</i>           
     </div>
+  </div>
+  ✯
+  <div id="links" style="display:none;">
+    <a href="https://github.com/EricoHello/AllStarMeekerWeb">ABOUT US</a>
+    <a href="https://github.com/EricoHello/AllStarMeekerWeb">SIGN UP</a>
+    <a href="https://github.com/EricoHello/AllStarMeekerWeb">LOCATIONS</a>
   </div>
 
   <button id="scrollBtn">BUS PASS</button>
@@ -59,16 +64,60 @@
     </div>
   </div>
 
-  <div class="cardSports">
-
-    <div class="card-title-Sports">Sports</div>
-
-    <p>Led by the <strong>legendary high school football coach Quincy!</strong> - this class is designed to instill discipline, teamwork, and perseverance in the students both on and off the field. Coach Quincy is known for his tough love approach to coaching, and this class will challenge students to push themselves to their limits and work together to achieve their goals.</p>
+  <div class="container">
+    <div class="cardSports">
+      <div class="card-title-Sports">Sports</div>
+      <img src="cookegg.jpg" id="cookegg">
+      <p>Led by the <strong>legendary high school football coach Quincy!</strong> - this class is designed to instill discipline, teamwork, and perseverance in the students both on and off the field. Coach Quincy is known for his tough love approach to coaching, and this class will challenge students to push themselves to their limits and work together to achieve their goals.</p>
      
-    <p><strong>Join us for an exceptional sports program and have fun with friends!</strong> </p>
-    
+      <p><strong>Join us for an exceptional sports program and have fun with friends!</strong> </p>
+    </div>
+    <div class="video-container">
+      <video id="my-video" controls playsinline>
+        <source src="meeker.mp4" type="video/mp4">
+      </video>
+    </div>
+  </div>
+  <div class="container">
+    <div class="cardSports">
+      <div class="card-title-Sports">Music</div>
+      <img src="cookegg.jpg" id="cookegg">
+      <p><strong>Introducing a cooking class like no other</strong> - led by an expert teacher with more than 15 years of experience in teaching cooking, and supported by enthusiastic assistants, this class is designed to engage middle school students in a fun and educational cooking experience.</p>
+      <p><strong>Join us for an exciting culinary adventure and learn to cook like a pro!</strong></p>
+    </div>
+    <div class="video-container">
+      <video id="my-video" controls playsinline>
+        <source src="meeker.mp4" type="video/mp4">
+      </video>
+    </div>
   </div>
 
+  <div class="container">
+    <div class="cardSports">
+      <div class="card-title-Sports">Art</div>
+      <img src="cookegg.jpg" id="cookegg">
+      <p><strong>Introducing a cooking class like no other</strong> - led by an expert teacher with more than 15 years of experience in teaching cooking, and supported by enthusiastic assistants, this class is designed to engage middle school students in a fun and educational cooking experience.</p>
+      <p><strong>Join us for an exciting culinary adventure and learn to cook like a pro!</strong></p>
+    </div>
+    <div class="video-container">
+      <video id="my-video" controls playsinline>
+        <source src="meeker.mp4" type="video/mp4">
+      </video>
+    </div>
+  </div>
+  <div class="container">
+    <div class="cardSports">
+      <div class="card-title-Sports">Coding</div>
+      <img src="cookegg.jpg" id="cookegg">
+      <p><strong>Introducing a cooking class like no other</strong> - led by an expert teacher with more than 15 years of experience in teaching cooking, and supported by enthusiastic assistants, this class is designed to engage middle school students in a fun and educational cooking experience.</p>
+      <p><strong>Join us for an exciting culinary adventure and learn to cook like a pro!</strong></p>
+    </div>
+    <div class="video-container">
+      <video id="my-video" controls playsinline>
+        <source src="meeker.mp4" type="video/mp4">
+      </video>
+    </div>
+  </div>
 </main>
 <!-- partial -->
   <script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.1/TweenMax.min.js'></script><script  src="formWeb.js"></script>

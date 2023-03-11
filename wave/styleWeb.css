@@ -81,6 +81,7 @@
     font-weight: 400;
     line-height: 1.5;
     position: relative;
+    left: 65px;
   }
   
   .small-title {
@@ -105,12 +106,32 @@
     right: 10px;
     cursor: pointer;
   }
-  
+  #links {
+    position: fixed;
+    top: 15px;
+    left: 50%;
+    background-color: #d69a0e;
+    padding: 10px;
+    border-radius: 5px;
+    z-index: 1;
+    display: block;
+  }
+  #links a {
+    display: inline-block;
+    margin-right: 20px;
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+  }
+  #links a:hover {
+    text-decoration: underline;
+  }
   .icon-button {
     position: fixed;
     top: 0;
     left: 0;
-    padding: 6px;
+    padding: 3px;
     outline: none;
     -webkit-user-select: none;
        -moz-user-select: none;
@@ -118,23 +139,20 @@
             user-select: none;
     font-size: 0;
     line-height: 1;
-    width: 35px;
-    height: 60px;
+    width: 70px;
+    height: 65px;
     box-sizing: border-box !important;
+    color: #fff;
   }
   
   .material-icons {
-    font-size: 24px;
-    color: white;
+    font-size: 50px;
   }
+
   .icon-button .icon {
-    display: inline-flex;
-    align-items: center;
+    display: flex;
     justify-content: center;
-    position: relative;
-    vertical-align: middle;
-    fill: currentcolor;
-    stroke: none;
+    align-items: center;
     width: 100%;
     height: 100%;
   }
@@ -182,33 +200,16 @@
   }
   
   .mp3-container h2 {
-    font-size: 14px;
+    font-size: 24px;
     margin: 0;
     color: #333;
   }
   
   .mp3-container audio {
-    width: 80%;
+    width: 60%;
     background-position: center bottom;
   }
-  .custom-controls::-webkit-media-controls-start-playback-button {
-    display: none;
-  }
-  
-  .custom-controls::-webkit-media-controls {
-    visibility: visible !important;
-    opacity: 1 !important;
-    height: auto !important;
-  }
-  
-  .custom-controls::-webkit-media-controls-enclosure {
-    display: flex;
-    align-items: center;
-  }
-  
-  .custom-controls::-webkit-media-controls-volume-slider {
-    width: 100%;
-  }
+
   
   .container {
     display: flex;
@@ -223,10 +224,11 @@
   }
   
   audio {
-    margin-top: 10px;
-    width: 80%;
-    max-width: 400px;
+    width: 120%;
+    max-width: 100%;
+    zoom: 1.5;
   }
+  
   .card {
     padding: 16px;
     margin: 24px;
@@ -270,6 +272,33 @@
     max-height: 200px;
     margin-left: 10px;
   }
+
+  .cardSports {
+    padding: 16px;
+    margin: 24px;
+    border-radius: 10px;
+    background-color: #fff;
+    color: rgba(0, 0, 0, 0.87);
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.2);
+    margin-top: 90px;
+    width: 50%;
+    
+  }
+  .cardSports .card-title-Sports {
+    padding: 24px 16px 8px;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 32px;
+  }
+  .cardSports p {
+    font-size: 1.6rem;
+    font-weight: 400;
+    letter-spacing: 0.01em;
+    line-height: 1.6em;
+    padding: 0 16px;
+  }
+
+  
   @media (max-width: 768px) {
     .card {
       width: 100%;
@@ -286,28 +315,4 @@
       width: 100%;
       margin-top: 24px;
     }
-  }
-
-  .cardSports {
-    padding: 16px;
-    margin: 24px;
-    border-radius: 10px;
-    background-color: #fff;
-    color: rgba(0, 0, 0, 0.87);
-    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.2);
-    width: 50%;
-    
-  }
-  .cardSports .card-title-Sports {
-    padding: 24px 16px 8px;
-    font-size: 24px;
-    font-weight: 400;
-    line-height: 32px;
-  }
-  .cardSports p {
-    font-size: 1.6rem;
-    font-weight: 400;
-    letter-spacing: 0.01em;
-    line-height: 1.6em;
-    padding: 0 16px;
   }

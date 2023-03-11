@@ -13,10 +13,10 @@
   }
   #cube-iframe {
     position: fixed;
-    bottom: 0;
-    right: 0;
-    width: 30%;
-    height: 30%;
+    bottom: 0%;
+    right: 0%;
+    width: 10%;
+    height: 10%;
     max-width: 300px;
     max-height: 300px;
   }
