@@ -217,7 +217,7 @@
   .card {
     padding: 16px;
     margin: 24px;
-    margin-top: 100px;
+    margin-top: 150px;
     border-radius: 10px;
     background-color: #fff;
     color: rgba(0, 0, 0, 0.87);
@@ -242,7 +242,7 @@
   
   .video-container {
     margin-right: 40px;
-    margin-top: 80px;
+    margin-top: 130px;
     width: 40%;
   }
   

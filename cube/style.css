@@ -11,7 +11,7 @@ body {
 	font-family:  'Google Sans', sans-serif, system-ui;
 }
 :root {
-	--size: 16;
+	--size: 172;
 	--coefficient: 1px;
 	--timeline: 2.6s;
 	--delay: 0.65s;
