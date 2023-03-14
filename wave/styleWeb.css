@@ -189,10 +189,17 @@
     background-position: left center;
   }
   
+  .mp3-container {
+    background-color: #d7d6d620; /* set the background color */
+    padding: 10px; /* add some padding */
+    border-radius: 5px; /* round the corners */
+  }
+  
   .mp3-container h2 {
-    font-size: 30px;
-    margin: 0;
-    color: #333;
+    color: #2d2d2d;
+    margin: 0; /* remove any default margin */
+    font-size: 5.2em; /* set the font size */
+    font-weight: bold; /* set the font weight */
   }
 
   
@@ -213,7 +220,18 @@
     max-width: 100%;
     zoom: 1.5;
   }
-  
+  .button {
+    background-color: #d69a0e;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 20px auto 0;
+    width: 100%;
+    max-width: 100vw;
+  }
   .card {
     padding: 16px;
     margin: 24px;
@@ -281,4 +299,13 @@
     letter-spacing: 0.01em;
     line-height: 1.6em;
     padding: 0 16px;
+  }
+  .card-link {
+    font-family: Arial, sans-serif;
+    font-size: 24px;
+    color: #71aaf4;
+    margin-right: 10px;
+    background-color: #f8f8f8;
+    border: 1px solid #79b0f3;
+    padding: 10px;
   }

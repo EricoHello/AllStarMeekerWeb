@@ -63,16 +63,12 @@ function update() {
   
   requestId = null;
 }
-const scrollBtn = document.getElementById("scrollBtn");
-
-scrollBtn.addEventListener("click", function() {
+document.getElementById("scrollBtn").addEventListener("click", function() {
   window.scrollTo({
     top: document.body.scrollHeight,
-    behavior: 'smooth',
-    duration: 1000
+    behavior: 'smooth'
   });
 });
-
 function showLinks() {
   var linksDiv = document.getElementById("links");
   if (linksDiv.style.display === "none") {

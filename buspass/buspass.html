@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Student Bus Passes</title>
+    <link rel="stylesheet" type="text/css" href="buspass.css">
+  </head>
+  <body>
+    <a href="/wave/indexWeb.html" class="goback">Go back</a>
+    <h1>Student Bus Passes</h1>
+    <div class="container">
+      <form>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name">
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password">
+        <button type="button" onclick="showBusPass()">Show Bus Pass</button>
+      </form>
+      <div id="buspass">
+        <h2>Bus Pass</h2>
+        <p id="fullname"></p>
+        <p id="busroute"></p>
+        <img src="buspass.jpeg" alt="Bus Pass">
+      </div>
+    </div>
+    <script src="buspass.js"></script>
+  </body>
+</html>

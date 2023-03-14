@@ -1,0 +1,55 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  label {
+    margin-bottom: 10px;
+  }
+  
+  button {
+    margin-top: 10px;
+  }
+  
+  #buspass {
+    display: none;
+    text-align: center;
+  }
+  
+  h2 {
+    margin-bottom: 10px;
+  }
+  
+  img {
+    max-width: 100%;
+  }
+  .goback {
+    position: absolute;
+    top: 30px;
+    left: 20px;
+    font-size: 16px;
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  .goback:hover {
+    background-color: #3e8e41;
+  }
+  h1 {
+    font-size: 16px; /* Change font size to your preference */
+    font-weight: bold; /* Add bold font weight */
+    text-align: center; /* Center the heading */
+    margin-top: 20px; /* Add top margin */
+    margin-bottom: 20px; /* Add bottom margin */
+  }
