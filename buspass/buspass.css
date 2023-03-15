@@ -14,7 +14,15 @@
   label {
     margin-bottom: 10px;
   }
-  
+  .large-text {
+    font-size: 30px; /* Adjust the value as needed */
+  }
+  input[type="text"], input[type="password"] {
+    font-size: 16px;
+    padding: 10px;
+    width: 90%;
+    margin-bottom: 10px;
+  }
   button {
     margin-top: 10px;
   }
@@ -33,21 +41,21 @@
   }
   .goback {
     position: absolute;
-    top: 30px;
-    left: 20px;
-    font-size: 16px;
-    padding: 10px 20px;
+    top: 50px;
+    left: 40px;
+    font-size: 36px;
+    padding: 30px 20px;
     background-color: #4CAF50;
     color: #fff;
     border: none;
-    border-radius: 5px;
+    border-radius: 25px;
     cursor: pointer;
   }
   .goback:hover {
     background-color: #3e8e41;
   }
   h1 {
-    font-size: 16px; /* Change font size to your preference */
+    font-size: 36px; /* Change font size to your preference */
     font-weight: bold; /* Add bold font weight */
     text-align: center; /* Center the heading */
     margin-top: 20px; /* Add top margin */
