@@ -38,6 +38,7 @@ var requestId = null;
 var reversed  = true;
 
 var video = document.getElementById("my-video2");
+
 video.volume = 0.5;
 
 update();
