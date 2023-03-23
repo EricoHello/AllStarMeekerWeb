@@ -39,7 +39,7 @@ var reversed  = true;
 
 var video = document.getElementById("my-video2");
 
-video.volume = 0.5;
+video.volume = 0.3;
 
 update();
 window.addEventListener("scroll", requestUpdate);
