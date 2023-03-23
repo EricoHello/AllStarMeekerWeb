@@ -37,6 +37,9 @@ var progress  = 0;
 var requestId = null;
 var reversed  = true;
 
+var video = document.getElementById("my-video2");
+video.volume = 0.5;
+
 update();
 window.addEventListener("scroll", requestUpdate);
 
